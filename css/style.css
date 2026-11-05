@@ -1,0 +1,278 @@
+/* ==========================================================================
+   RCCG Nigeria Province 5, Minna - Modern Aesthetic Glassmorphism Stylesheet
+   Inspired by contemporary wellness & sanctuary UI design
+   ========================================================================== */
+
+:root {
+  --primary-navy: #091a32;
+  --secondary-navy: #0f274a;
+  --accent-gold: #e5a93c;
+  --gold-glow: rgba(229, 169, 60, 0.35);
+  --rccg-blue: #0284c7;
+  --rccg-green: #10b981;
+  --rccg-red: #ef4444;
+  --glass-bg: rgba(15, 33, 60, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.14);
+  --glass-highlight: rgba(255, 255, 255, 0.25);
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Global Smoothness */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+}
+
+body {
+  background-color: #071324;
+  color: #f1f5f9;
+  overflow-x: hidden;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-display);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #081426;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a63;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-gold);
+}
+
+/* --------------------------------------------------------------------------
+   Glassmorphism Foundations (Matching the sleek reference image aesthetic)
+   -------------------------------------------------------------------------- */
+
+.glass-navbar {
+  background: rgba(8, 20, 38, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel {
+  background: rgba(14, 30, 56, 0.62);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.glass-card-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  background: rgba(20, 42, 78, 0.8);
+  border-color: rgba(229, 169, 60, 0.4);
+  box-shadow: 0 25px 60px -12px rgba(2, 132, 199, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+/* Floating interactive pill */
+.glass-pill {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  transition: all 0.25s ease;
+}
+.glass-pill:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Hero Pill Button with circular arrow like in reference image */
+.btn-pill-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ffffff;
+  color: #091a32;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.55rem 1.35rem;
+  box-shadow: 0 10px 25px -5px rgba(255, 255, 255, 0.25);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-pill-cta:hover {
+  transform: translateY(-2px) scale(1.02);
+  background: #f8fafc;
+  box-shadow: 0 15px 30px -5px rgba(229, 169, 60, 0.4);
+}
+
+.btn-pill-cta .arrow-circle {
+  width: 1.85rem;
+  height: 1.85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: #091a32;
+  color: #ffffff;
+  margin-left: 0.25rem;
+  transition: transform 0.3s ease;
+}
+.btn-pill-cta:hover .arrow-circle {
+  transform: rotate(45deg);
+  background: #d97706;
+}
+
+/* Gold Pill CTA */
+.btn-gold {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.65rem 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.4);
+  transition: all 0.3s ease;
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px -5px rgba(217, 119, 6, 0.6);
+  filter: brightness(1.08);
+}
+
+/* Background Atmosphere Glows */
+.ambient-glow-1 {
+  position: absolute;
+  top: -10%;
+  left: 20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(2, 132, 199, 0.22) 0%, rgba(2, 132, 199, 0) 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+.ambient-glow-2 {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.16) 0%, rgba(217, 119, 6, 0) 70%);
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+}
+.ambient-glow-3 {
+  position: absolute;
+  bottom: 0%;
+  left: 5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, rgba(16, 185, 129, 0) 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Floating animation */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+.animate-float-delayed {
+  animation: floatSlow 7s ease-in-out infinite 2s;
+}
+
+/* Live Badge Pulsing */
+@keyframes pulseDot {
+  0% { transform: scale(0.95); opacity: 0.8; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+  70% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+  100% { transform: scale(0.95); opacity: 0.8; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+.live-pulse-dot {
+  animation: pulseDot 2s infinite;
+}
+
+/* Subtle Shimmer for Highlights */
+.shimmer-text {
+  background: linear-gradient(90deg, #ffffff 0%, #fde68a 50%, #ffffff 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Reference UI Moment Quick Action Button */
+.moment-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.25rem;
+  padding: 1.1rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #e2e8f0;
+}
+.moment-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(229, 169, 60, 0.5);
+  transform: translateY(-3px) scale(1.03);
+  color: #ffffff;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+.moment-btn .moment-icon-box {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.moment-btn:hover .moment-icon-box {
+  background: #f59e0b;
+  color: #091a32;
+}
+
+/* Glass Modal */
+.modal-overlay {
+  background: rgba(5, 12, 23, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-headline {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+  }
+}

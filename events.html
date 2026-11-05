@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events & Calendar | RCCG Nigeria Province 5, Minna</title>
+  <meta name="description" content="Discover upcoming spiritual summits, conventions, and programs at RCCG Nigeria Province 5, Minna.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandNavy: '#071324',
+            brandDark: '#0B1A30',
+            brandGold: '#E5A93C',
+            brandBlue: '#0284C7',
+            brandEmerald: '#10B981',
+            brandRed: '#EF4444'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-brandNavy text-slate-100 antialiased selection:bg-brandGold selection:text-slate-900 relative min-h-screen">
+
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Navbar -->
+  <header id="mainNavbar" class="sticky top-0 z-40 py-4 glass-navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-2xl p-1 bg-white/10 border border-white/20 shadow-lg">
+          <img src="assets/images/logo.svg" alt="RCCG Province 5 Logo" class="w-full h-full object-contain">
+        </div>
+        <div>
+          <span class="font-display font-black text-xl tracking-wider text-white flex items-center gap-1.5 leading-none">
+            RCCG <span class="text-brandGold">PROVINCE 5</span>
+          </span>
+          <span class="text-[10px] tracking-widest text-slate-400 uppercase font-medium">Minna, Niger State</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-200">
+        <a href="index.html" class="hover:text-brandGold transition-colors">Home</a>
+        <a href="about.html" class="hover:text-brandGold transition-colors">About Us</a>
+        <a href="leadership.html" class="hover:text-brandGold transition-colors">Leadership</a>
+        <a href="ministries.html" class="hover:text-brandGold transition-colors">Ministries</a>
+        <a href="programs.html" class="hover:text-brandGold transition-colors">Programs</a>
+        <a href="events.html" class="text-brandGold font-semibold">Events</a>
+        <a href="sermons.html" class="hover:text-brandGold transition-colors">Sermons</a>
+        <a href="gallery.html" class="hover:text-brandGold transition-colors">Gallery</a>
+        <a href="contact.html" class="hover:text-brandGold transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="give.html" class="text-xs uppercase tracking-wider font-bold text-slate-300 hover:text-white px-3 py-2 rounded-lg transition-colors flex items-center gap-1">
+          <i data-lucide="heart" class="w-4 h-4 text-brandGold"></i> Give
+        </a>
+        <a href="index.html#servicesSection" class="btn-pill-cta text-sm">
+          <span>Join Us</span>
+          <span class="arrow-circle"><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
+        </a>
+      </div>
+
+      <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl bg-white/10 text-slate-200">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileMenu" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-2xl hidden flex flex-col p-6">
+    <div class="flex items-center justify-between pb-6 border-b border-white/10">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.svg" alt="RCCG Province 5" class="w-9 h-9">
+        <span class="font-display font-bold text-lg text-white">RCCG Nigeria Province 5</span>
+      </div>
+      <button id="closeMobileMenu" class="p-2 rounded-full bg-white/10 text-slate-300">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <div class="flex flex-col gap-4 py-8 text-lg font-medium text-slate-200">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="ministries.html">Ministries</a>
+      <a href="programs.html">Programs</a>
+      <a href="events.html" class="text-brandGold font-bold">Events</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="give.html" class="text-brandGold">Online Giving</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="py-16 sm:py-20 relative border-b border-white/10 text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brandGold/10 text-brandGold text-xs font-bold uppercase tracking-wider mb-4">
+        <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Mark Your Calendar
+      </span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white">
+        Upcoming Provincial Events
+      </h1>
+      <p class="mt-4 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+        Join thousands of believers in our upcoming conferences, revival convocations, and youth festivals across Minna and Niger State.
+      </p>
+
+      <!-- Category Filter Tabs -->
+      <div class="mt-8 flex flex-wrap justify-center gap-2">
+        <button data-tab-filter="all" class="px-5 py-2 rounded-full text-xs font-bold bg-amber-500 text-slate-950 transition-all">All Events</button>
+        <button data-tab-filter="conventions" class="px-5 py-2 rounded-full text-xs font-medium bg-white/10 text-slate-300 hover:bg-white/20 transition-all">Conventions</button>
+        <button data-tab-filter="youth" class="px-5 py-2 rounded-full text-xs font-medium bg-white/10 text-slate-300 hover:bg-white/20 transition-all">Youth & YAYA</button>
+        <button data-tab-filter="women" class="px-5 py-2 rounded-full text-xs font-medium bg-white/10 text-slate-300 hover:bg-white/20 transition-all">Women & Men</button>
+        <button data-tab-filter="special" class="px-5 py-2 rounded-full text-xs font-medium bg-white/10 text-slate-300 hover:bg-white/20 transition-all">Special Summits</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Grid -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Event 1: Convention -->
+        <div data-tab-category="conventions" class="glass-panel rounded-3xl overflow-hidden glass-card-hover flex flex-col">
+          <div class="h-52 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?auto=format&fit=crop&w=700&q=80" alt="Provincial Convention" class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brandNavy/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/20 text-center">
+              <span class="block text-xs uppercase font-bold text-brandGold">OCT</span>
+              <span class="block text-lg font-black text-white leading-none">18</span>
+            </div>
+            <span class="absolute top-4 right-4 bg-brandEmerald px-3 py-0.5 rounded-full text-[11px] font-bold text-white">Flagship</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-bold text-brandGold uppercase">Provincial Annual Convocation</span>
+              <h3 class="text-xl font-display font-bold text-white mt-1 mb-2">2026 Provincial Convention</h3>
+              <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+                Theme: <em>Divine Acceleration & Supernatural Increase</em>. 3 glorious days of apostolic teachings, miracle sessions, and ministerial ordinations.
+              </p>
+            </div>
+            <div>
+              <div class="space-y-1.5 text-xs text-slate-400 mb-4 pt-3 border-t border-white/10">
+                <div class="flex items-center gap-2"><i data-lucide="clock" class="w-3.5 h-3.5 text-brandGold"></i> Oct 18 - 20, 2026 • 5:00 PM Daily</div>
+                <div class="flex items-center gap-2"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brandGold"></i> Provincial Cathedral, Opp. Govt College Rd, Minna</div>
+              </div>
+              <button onclick="alert('Registration confirmed! We look forward to receiving you at the Convention.')" class="btn-gold w-full py-2.5 text-xs font-bold text-center block">
+                Reserve Free Seat
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 2: Youth Summit -->
+        <div data-tab-category="youth" class="glass-panel rounded-3xl overflow-hidden glass-card-hover flex flex-col">
+          <div class="h-52 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=700&q=80" alt="YAYA Youth Summit" class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brandNavy/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/20 text-center">
+              <span class="block text-xs uppercase font-bold text-brandGold">NOV</span>
+              <span class="block text-lg font-black text-white leading-none">21</span>
+            </div>
+            <span class="absolute top-4 right-4 bg-brandBlue px-3 py-0.5 rounded-full text-[11px] font-bold text-white">Youth & Campus</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-bold text-sky-400 uppercase">YAYA Movement</span>
+              <h3 class="text-xl font-display font-bold text-white mt-1 mb-2">Youth Ignite Conference 2026</h3>
+              <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+                Featuring panel discussions on tech careers, spiritual holiness on campus, Christian entrepreneurship, and music ministry.
+              </p>
+            </div>
+            <div>
+              <div class="space-y-1.5 text-xs text-slate-400 mb-4 pt-3 border-t border-white/10">
+                <div class="flex items-center gap-2"><i data-lucide="clock" class="w-3.5 h-3.5 text-sky-400"></i> Saturday, Nov 21 • 10:00 AM</div>
+                <div class="flex items-center gap-2"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-sky-400"></i> Youth Arena, Minna</div>
+              </div>
+              <button onclick="alert('Youth summit registration submitted! Welcome to YAYA.')" class="w-full py-2.5 rounded-full bg-white/10 hover:bg-brandGold hover:text-brandNavy transition-all text-xs font-bold text-white">
+                Register Free
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 3: Good Women Conference -->
+        <div data-tab-category="women" class="glass-panel rounded-3xl overflow-hidden glass-card-hover flex flex-col">
+          <div class="h-52 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=80" alt="Good Women Summit" class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brandNavy/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/20 text-center">
+              <span class="block text-xs uppercase font-bold text-brandGold">DEC</span>
+              <span class="block text-lg font-black text-white leading-none">05</span>
+            </div>
+            <span class="absolute top-4 right-4 bg-pink-500 px-3 py-0.5 rounded-full text-[11px] font-bold text-white">Mothers of Zion</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-bold text-pink-400 uppercase">Good Women Fellowship</span>
+              <h3 class="text-xl font-display font-bold text-white mt-1 mb-2">Annual Virtuous Women Summit</h3>
+              <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+                Theme: <em>Women of Irrevocable Glory</em>. Empowering mothers, wives, and career women with maternal prayer altars and financial wisdom.
+              </p>
+            </div>
+            <div>
+              <div class="space-y-1.5 text-xs text-slate-400 mb-4 pt-3 border-t border-white/10">
+                <div class="flex items-center gap-2"><i data-lucide="clock" class="w-3.5 h-3.5 text-pink-400"></i> Saturday, Dec 05 • 9:00 AM</div>
+                <div class="flex items-center gap-2"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-pink-400"></i> Main Hall, Minna HQ</div>
+              </div>
+              <button onclick="alert('Registration complete! See you at the Women Summit.')" class="w-full py-2.5 rounded-full bg-white/10 hover:bg-brandGold hover:text-brandNavy transition-all text-xs font-bold text-white">
+                Register Free
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 4: Special Summit - Holy Ghost Service -->
+        <div data-tab-category="special" class="glass-panel rounded-3xl overflow-hidden glass-card-hover flex flex-col">
+          <div class="h-52 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=700&q=80" alt="Holy Ghost Service" class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brandNavy/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/20 text-center">
+              <span class="block text-xs uppercase font-bold text-brandGold">NOV</span>
+              <span class="block text-lg font-black text-white leading-none">06</span>
+            </div>
+            <span class="absolute top-4 right-4 bg-amber-500 px-3 py-0.5 rounded-full text-[11px] font-bold text-brandNavy">Nationwide</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-bold text-brandGold uppercase">Redemption City Satellite</span>
+              <h3 class="text-xl font-display font-bold text-white mt-1 mb-2">Monthly Holy Ghost Service</h3>
+              <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+                Connect with the anointing on Daddy G.O. live across our viewing centers in Minna, Bida, and Suleja.
+              </p>
+            </div>
+            <div>
+              <div class="space-y-1.5 text-xs text-slate-400 mb-4 pt-3 border-t border-white/10">
+                <div class="flex items-center gap-2"><i data-lucide="clock" class="w-3.5 h-3.5 text-brandGold"></i> 1st Friday • 7:00 PM - Dawn</div>
+                <div class="flex items-center gap-2"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brandGold"></i> All Province 5 Parish Centers</div>
+              </div>
+              <a href="contact.html" class="block text-center py-2.5 rounded-full bg-white/10 hover:bg-brandGold hover:text-brandNavy transition-all text-xs font-bold text-white">
+                Find Nearest Center
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-white/10 pt-16 pb-12 text-sm text-slate-400 text-center text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p>© 2026 The Redeemed Christian Church of God, Nigeria Province 5, Minna. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

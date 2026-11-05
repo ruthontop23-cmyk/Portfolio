@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs & Services | RCCG Nigeria Province 5, Minna</title>
+  <meta name="description" content="Weekly service schedule, monthly Holy Ghost services, and annual spiritual programs at RCCG Nigeria Province 5, Minna.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandNavy: '#071324',
+            brandDark: '#0B1A30',
+            brandGold: '#E5A93C',
+            brandBlue: '#0284C7',
+            brandEmerald: '#10B981',
+            brandRed: '#EF4444'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-brandNavy text-slate-100 antialiased selection:bg-brandGold selection:text-slate-900 relative min-h-screen">
+
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Navbar -->
+  <header id="mainNavbar" class="sticky top-0 z-40 py-4 glass-navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-2xl p-1 bg-white/10 border border-white/20 shadow-lg">
+          <img src="assets/images/logo.svg" alt="RCCG Province 5 Logo" class="w-full h-full object-contain">
+        </div>
+        <div>
+          <span class="font-display font-black text-xl tracking-wider text-white flex items-center gap-1.5 leading-none">
+            RCCG <span class="text-brandGold">PROVINCE 5</span>
+          </span>
+          <span class="text-[10px] tracking-widest text-slate-400 uppercase font-medium">Minna, Niger State</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-200">
+        <a href="index.html" class="hover:text-brandGold transition-colors">Home</a>
+        <a href="about.html" class="hover:text-brandGold transition-colors">About Us</a>
+        <a href="leadership.html" class="hover:text-brandGold transition-colors">Leadership</a>
+        <a href="ministries.html" class="hover:text-brandGold transition-colors">Ministries</a>
+        <a href="programs.html" class="text-brandGold font-semibold">Programs</a>
+        <a href="events.html" class="hover:text-brandGold transition-colors">Events</a>
+        <a href="sermons.html" class="hover:text-brandGold transition-colors">Sermons</a>
+        <a href="gallery.html" class="hover:text-brandGold transition-colors">Gallery</a>
+        <a href="contact.html" class="hover:text-brandGold transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="give.html" class="text-xs uppercase tracking-wider font-bold text-slate-300 hover:text-white px-3 py-2 rounded-lg transition-colors flex items-center gap-1">
+          <i data-lucide="heart" class="w-4 h-4 text-brandGold"></i> Give
+        </a>
+        <a href="index.html#servicesSection" class="btn-pill-cta text-sm">
+          <span>Join Us</span>
+          <span class="arrow-circle"><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
+        </a>
+      </div>
+
+      <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl bg-white/10 text-slate-200">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileMenu" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-2xl hidden flex flex-col p-6">
+    <div class="flex items-center justify-between pb-6 border-b border-white/10">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.svg" alt="RCCG Province 5" class="w-9 h-9">
+        <span class="font-display font-bold text-lg text-white">RCCG Nigeria Province 5</span>
+      </div>
+      <button id="closeMobileMenu" class="p-2 rounded-full bg-white/10 text-slate-300">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <div class="flex flex-col gap-4 py-8 text-lg font-medium text-slate-200">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="ministries.html">Ministries</a>
+      <a href="programs.html" class="text-brandGold font-bold">Programs</a>
+      <a href="events.html">Events</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="give.html" class="text-brandGold">Online Giving</a>
+    </div>
+  </div>
+
+  <!-- Hero Header -->
+  <section class="py-16 sm:py-20 relative border-b border-white/10 text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brandGold/10 text-brandGold text-xs font-bold uppercase tracking-wider mb-4">
+        <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Spiritual Encounters
+      </span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white">
+        Programs & Service Times
+      </h1>
+      <p class="mt-4 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+        Consistent times of spiritual refreshment, fervent prayer, and grounded revelation across all RCCG Province 5 parishes in Minna.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section: Weekly Services -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-2xl mb-12">
+        <span class="text-xs uppercase font-bold tracking-widest text-brandGold">Weekly Rhythm</span>
+        <h2 class="text-3xl font-display font-extrabold text-white mt-1">Our Weekly Encounters</h2>
+      </div>
+
+      <div class="space-y-6">
+        
+        <!-- Sunday -->
+        <div class="glass-panel p-6 sm:p-8 rounded-3xl grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <div class="lg:col-span-3 flex items-center gap-4">
+            <div class="w-16 h-16 rounded-2xl bg-amber-500/20 text-brandGold flex items-center justify-center shrink-0">
+              <i data-lucide="sun" class="w-8 h-8"></i>
+            </div>
+            <div>
+              <span class="text-xs text-brandGold font-bold uppercase">Every Sunday</span>
+              <h3 class="text-2xl font-display font-bold text-white">Celebration Service</h3>
+            </div>
+          </div>
+          <div class="lg:col-span-6 text-sm text-slate-300">
+            <p>
+              Includes <strong>Sunday School Preparatory Study (8:00 AM)</strong> followed by heavenly choir praise, testimonies of divine interventions, anointed preaching, and prophetic blessings for the week ahead.
+            </p>
+          </div>
+          <div class="lg:col-span-3 flex flex-col sm:items-end justify-center">
+            <span class="text-base font-bold text-white flex items-center gap-1.5">
+              <i data-lucide="clock" class="w-4 h-4 text-brandGold"></i> 8:00 AM - 11:30 AM
+            </span>
+            <span class="text-xs text-slate-400 mt-1">All Parishes in Minna</span>
+          </div>
+        </div>
+
+        <!-- Wednesday -->
+        <div class="glass-panel p-6 sm:p-8 rounded-3xl grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <div class="lg:col-span-3 flex items-center gap-4">
+            <div class="w-16 h-16 rounded-2xl bg-sky-500/20 text-brandBlue flex items-center justify-center shrink-0">
+              <i data-lucide="book-open" class="w-8 h-8"></i>
+            </div>
+            <div>
+              <span class="text-xs text-sky-400 font-bold uppercase">Every Wednesday</span>
+              <h3 class="text-2xl font-display font-bold text-white">Digging Deep</h3>
+            </div>
+          </div>
+          <div class="lg:col-span-6 text-sm text-slate-300">
+            <p>
+              In-depth theological study of the Holy Scriptures using systematic outlines from Daddy G.O., followed by open interactive question and answer sessions to mature every Christian believer.
+            </p>
+          </div>
+          <div class="lg:col-span-3 flex flex-col sm:items-end justify-center">
+            <span class="text-base font-bold text-white flex items-center gap-1.5">
+              <i data-lucide="clock" class="w-4 h-4 text-sky-400"></i> 5:00 PM - 6:30 PM
+            </span>
+            <span class="text-xs text-slate-400 mt-1">Midweek Bible Study</span>
+          </div>
+        </div>
+
+        <!-- Friday -->
+        <div class="glass-panel p-6 sm:p-8 rounded-3xl grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <div class="lg:col-span-3 flex items-center gap-4">
+            <div class="w-16 h-16 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+              <i data-lucide="flame" class="w-8 h-8"></i>
+            </div>
+            <div>
+              <span class="text-xs text-emerald-400 font-bold uppercase">Every Friday</span>
+              <h3 class="text-2xl font-display font-bold text-white">Faith Clinic</h3>
+            </div>
+          </div>
+          <div class="lg:col-span-6 text-sm text-slate-300">
+            <p>
+              Intense warfare prayers, deliverance from generational covenants, divine healing, and breakthrough petitions for families, civil servants, students, and businesses.
+            </p>
+          </div>
+          <div class="lg:col-span-3 flex flex-col sm:items-end justify-center">
+            <span class="text-base font-bold text-white flex items-center gap-1.5">
+              <i data-lucide="clock" class="w-4 h-4 text-emerald-400"></i> 5:00 PM - 6:30 PM
+            </span>
+            <span class="text-xs text-slate-400 mt-1">Intercessory Clinic</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section: Monthly & Special Summits -->
+  <section class="py-20 bg-slate-950/60 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs uppercase font-bold tracking-widest text-brandGold">Monthly & Annual</span>
+        <h2 class="text-3xl font-display font-extrabold text-white mt-1">Special Spiritual Summits</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-3xl glass-panel relative">
+          <span class="text-xs font-bold text-brandGold uppercase">1st Friday of Every Month</span>
+          <h3 class="text-xl font-display font-bold text-white mt-1 mb-3">Holy Ghost Service</h3>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">
+            Direct satellite linkup with the Redemption City. Night of supernatural miracles, salvation, and prophetic utterances ministered by Pastor E.A. Adeboye.
+          </p>
+          <span class="text-xs text-slate-400 block font-semibold">Time: 7:00 PM - Dawn</span>
+        </div>
+
+        <div class="p-6 rounded-3xl glass-panel relative">
+          <span class="text-xs font-bold text-sky-400 uppercase">1st Monday of Every Month</span>
+          <h3 class="text-xl font-display font-bold text-white mt-1 mb-3">Divine Encounter & Shiloh Hour</h3>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">
+            Morning miracle service for career breakthroughs, financial open doors, and divine fruitfulness for expectant mothers and families.
+          </p>
+          <span class="text-xs text-slate-400 block font-semibold">Time: 6:00 AM - 7:30 AM</span>
+        </div>
+
+        <div class="p-6 rounded-3xl glass-panel relative">
+          <span class="text-xs font-bold text-emerald-400 uppercase">Annual Gathering</span>
+          <h3 class="text-xl font-display font-bold text-white mt-1 mb-3">Provincial Convention</h3>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">
+            A mighty multi-day convocation bringing together ministers, workers, and thousands of believers across Minna and Niger State.
+          </p>
+          <span class="text-xs text-slate-400 block font-semibold">October Every Year</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Open Heavens Daily Devotional Spotlight -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="glass-panel p-8 sm:p-12 rounded-[2.5rem] border border-brandGold/40 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div class="max-w-2xl space-y-3">
+          <span class="text-xs uppercase font-bold tracking-widest text-brandGold flex items-center gap-1.5">
+            <i data-lucide="book-heart" class="w-4 h-4"></i> Daily Word of God
+          </span>
+          <h3 class="text-2xl sm:text-3xl font-display font-extrabold text-white">Open Heavens Daily Devotional</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Written by our General Overseer, Pastor E.A. Adeboye. Nourish your spirit daily with biblical expositions, key memory verses, prayer points, and 365-day Bible in One Year reading plan.
+          </p>
+        </div>
+        <div class="shrink-0 flex flex-col sm:flex-row gap-3">
+          <a href="https://openheavens.rccg.org" target="_blank" rel="noopener" class="btn-gold text-xs inline-flex items-center gap-2">
+            <span>Read Today's Devotional</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-white/10 pt-16 pb-12 text-sm text-slate-400 text-center text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p>© 2026 The Redeemed Christian Church of God, Nigeria Province 5, Minna. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ministries & Departments | RCCG Nigeria Province 5, Minna</title>
+  <meta name="description" content="Discover our vibrant ministries, fellowships, and service departments at RCCG Nigeria Province 5, Minna.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandNavy: '#071324',
+            brandDark: '#0B1A30',
+            brandGold: '#E5A93C',
+            brandBlue: '#0284C7',
+            brandEmerald: '#10B981',
+            brandRed: '#EF4444'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-brandNavy text-slate-100 antialiased selection:bg-brandGold selection:text-slate-900 relative min-h-screen">
+
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Navbar -->
+  <header id="mainNavbar" class="sticky top-0 z-40 py-4 glass-navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-2xl p-1 bg-white/10 border border-white/20 shadow-lg">
+          <img src="assets/images/logo.svg" alt="RCCG Province 5 Logo" class="w-full h-full object-contain">
+        </div>
+        <div>
+          <span class="font-display font-black text-xl tracking-wider text-white flex items-center gap-1.5 leading-none">
+            RCCG <span class="text-brandGold">PROVINCE 5</span>
+          </span>
+          <span class="text-[10px] tracking-widest text-slate-400 uppercase font-medium">Minna, Niger State</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-200">
+        <a href="index.html" class="hover:text-brandGold transition-colors">Home</a>
+        <a href="about.html" class="hover:text-brandGold transition-colors">About Us</a>
+        <a href="leadership.html" class="hover:text-brandGold transition-colors">Leadership</a>
+        <a href="ministries.html" class="text-brandGold font-semibold">Ministries</a>
+        <a href="programs.html" class="hover:text-brandGold transition-colors">Programs</a>
+        <a href="events.html" class="hover:text-brandGold transition-colors">Events</a>
+        <a href="sermons.html" class="hover:text-brandGold transition-colors">Sermons</a>
+        <a href="gallery.html" class="hover:text-brandGold transition-colors">Gallery</a>
+        <a href="contact.html" class="hover:text-brandGold transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="give.html" class="text-xs uppercase tracking-wider font-bold text-slate-300 hover:text-white px-3 py-2 rounded-lg transition-colors flex items-center gap-1">
+          <i data-lucide="heart" class="w-4 h-4 text-brandGold"></i> Give
+        </a>
+        <a href="index.html#servicesSection" class="btn-pill-cta text-sm">
+          <span>Join Us</span>
+          <span class="arrow-circle"><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
+        </a>
+      </div>
+
+      <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl bg-white/10 text-slate-200">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-2xl hidden flex flex-col p-6">
+    <div class="flex items-center justify-between pb-6 border-b border-white/10">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.svg" alt="RCCG Province 5" class="w-9 h-9">
+        <span class="font-display font-bold text-lg text-white">RCCG Nigeria Province 5</span>
+      </div>
+      <button id="closeMobileMenu" class="p-2 rounded-full bg-white/10 text-slate-300">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <div class="flex flex-col gap-4 py-8 text-lg font-medium text-slate-200">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="ministries.html" class="text-brandGold font-bold">Ministries</a>
+      <a href="programs.html">Programs</a>
+      <a href="events.html">Events</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="give.html" class="text-brandGold">Online Giving</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="py-16 sm:py-20 relative border-b border-white/10 text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brandGold/10 text-brandGold text-xs font-bold uppercase tracking-wider mb-4">
+        <i data-lucide="layers" class="w-3.5 h-3.5"></i> Find Your Place of Service
+      </span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white">
+        Ministries & Fellowships
+      </h1>
+      <p class="mt-4 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+        God has given each believer unique talents and gifts. Discover where you can belong, grow, and minister with purpose in Province 5.
+      </p>
+    </div>
+  </section>
+
+  <!-- Ministries Cards Grid -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 1. Good Women Ministry -->
+        <div class="glass-panel p-8 rounded-3xl glass-card-hover flex flex-col justify-between border-t-4 border-pink-500">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-pink-500/20 text-pink-400 flex items-center justify-center mb-6">
+              <i data-lucide="heart" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs uppercase font-bold tracking-wider text-pink-400">Mothers & Daughters of Zion</span>
+            <h3 class="text-2xl font-display font-bold text-white mt-1 mb-3">Good Women Fellowship</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Nurturing Christian homes, building spiritual mothers, and organizing maternal prayer vigils, marital seminars, and charitable family welfare drives across Niger State.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+            <span>Every 1st Saturday • 9:00 AM</span>
+            <a href="contact.html" class="text-brandGold hover:underline font-bold">Join Fellowship →</a>
+          </div>
+        </div>
+
+        <!-- 2. Men of Issachar -->
+        <div class="glass-panel p-8 rounded-3xl glass-card-hover flex flex-col justify-between border-t-4 border-blue-500">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-500/20 text-blue-400 flex items-center justify-center mb-6">
+              <i data-lucide="shield" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs uppercase font-bold tracking-wider text-blue-400">Priests of the Home</span>
+            <h3 class="text-2xl font-display font-bold text-white mt-1 mb-3">Men's Fellowship</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Empowering Christian men to fulfill their God-ordained role as spiritual leaders, loving husbands, godly fathers, and ethical leaders in business, governance, and ministry.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+            <span>Monthly Breakfast Summit</span>
+            <a href="contact.html" class="text-brandGold hover:underline font-bold">Join Fellowship →</a>
+          </div>
+        </div>
+
+        <!-- 3. YAYA Youth & Young Adults -->
+        <div class="glass-panel p-8 rounded-3xl glass-card-hover flex flex-col justify-between border-t-4 border-amber-500">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-amber-500/20 text-brandGold flex items-center justify-center mb-6">
+              <i data-lucide="zap" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs uppercase font-bold tracking-wider text-brandGold">The Next Generation</span>
+            <h3 class="text-2xl font-display font-bold text-white mt-1 mb-3">YAYA Youth Ministry</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              A blazing movement of university students from FUT Minna, polytechnic scholars, tech innovators, and young professionals discovering purpose, holiness, and creative expression in God.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+            <span>Every Sunday • 4:00 PM</span>
+            <a href="contact.html" class="text-brandGold hover:underline font-bold">Join Fellowship →</a>
+          </div>
+        </div>
+
+        <!-- 4. Provincial Mass Choir -->
+        <div class="glass-panel p-8 rounded-3xl glass-card-hover flex flex-col justify-between border-t-4 border-purple-500">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center mb-6">
+              <i data-lucide="music" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs uppercase font-bold tracking-wider text-purple-400">Altar of Praise</span>
+            <h3 class="text-2xl font-display font-bold text-white mt-1 mb-3">Provincial Choir</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Ushering the divine presence through consecrated vocalists, multi-instrumentalists, sound engineering, and spirit-filled praise and worship that breaks yokes and stirs revival.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+            <span>Rehearsal: Saturdays 4 PM</span>
+            <a href="contact.html" class="text-brandGold hover:underline font-bold">Audition Details →</a>
+          </div>
+        </div>
+
+        <!-- 5. Ministerial Prayer Band -->
+        <div class="glass-panel p-8 rounded-3xl glass-card-hover flex flex-col justify-between border-t-4 border-red-500">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-red-500/20 text-red-400 flex items-center justify-center mb-6">
+              <i data-lucide="flame" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs uppercase font-bold tracking-wider text-red-400">Intercessory Watchmen</span>
+            <h3 class="text-2xl font-display font-bold text-white mt-1 mb-3">Prayer Warriors</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Standing in the spiritual gap for the body of Christ, the Province, the General Overseer, Niger State, and all prayer petitions submitted by members and guests.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+            <span>24/7 Watch Rotations</span>
+            <a href="contact.html" class="text-brandGold hover:underline font-bold">Join Prayer Chain →</a>
+          </div>
+        </div>
+
+        <!-- 6. Children & Teens Church -->
+        <div class="glass-panel p-8 rounded-3xl glass-card-hover flex flex-col justify-between border-t-4 border-emerald-500">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6">
+              <i data-lucide="smile" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs uppercase font-bold tracking-wider text-emerald-400">God's Heritage</span>
+            <h3 class="text-2xl font-display font-bold text-white mt-1 mb-3">Junior & Teens Church</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Laying unshakeable biblical foundations for infants, children, and teenagers with age-tailored Bible curriculums, creative arts, quizzes, and character mentorship.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+            <span>Sundays Concurrent</span>
+            <a href="contact.html" class="text-brandGold hover:underline font-bold">Learn More →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Call to Serve Banner -->
+      <div class="mt-16 glass-panel p-8 sm:p-10 rounded-3xl text-center max-w-3xl mx-auto border border-brandGold/30">
+        <h3 class="text-2xl font-display font-bold text-white mb-2">Desire to Serve in God's Vineyard?</h3>
+        <p class="text-xs sm:text-sm text-slate-300 mb-6">
+          Our Believers' Baptism and School of Discipleship classes prepare all prospective workers to serve effectively with spiritual power and integrity.
+        </p>
+        <a href="contact.html" class="btn-gold text-xs inline-flex items-center gap-2">
+          <span>Register for Workers' In-Training</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-white/10 pt-16 pb-12 text-sm text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs">
+      <p>© 2026 The Redeemed Christian Church of God, Nigeria Province 5, Minna. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

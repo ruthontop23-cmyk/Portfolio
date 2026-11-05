@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RCCG Niger Province 5, Minna | Official Website</title>
+  <meta name="description" content="Welcome to The Redeemed Christian Church of God, Niger Province 5, Minna. Making Heaven, Living Christlike, Raising Kingdom Ambassadors across Niger State.">
+  <link rel="icon" type="image/jpg+xml" href="assets/images/Logo.jpg">
+
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandNavy: '#071324',
+            brandDark: '#0B1A30',
+            brandGold: '#E5A93C',
+            brandGoldLight: '#FDE68A',
+            brandBlue: '#0284C7',
+            brandEmerald: '#10B981',
+            brandRed: '#EF4444'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-brandNavy text-slate-100 antialiased selection:bg-brandGold selection:text-slate-900 relative min-h-screen">
+
+  <!-- Atmospheric Ambient Glows -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="ambient-glow-3"></div>
+
+  <!-- ==========================================================================
+       TOP NOTIFICATION BAR (Live Stream & Announcement)
+       ========================================================================== -->
+  <div class="relative z-50 bg-slate-950/80 border-b border-white/10 text-xs py-2 px-4 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-semibold border border-emerald-500/30">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 live-pulse-dot"></span>
+          NEXT LIVE SERVICE
+        </span>
+        <span class="hidden sm:inline text-slate-300 font-medium">Sunday Celebration Service starts in:</span>
+        <span class="font-mono text-brandGold font-bold flex items-center gap-1">
+          <span id="cdDays">00</span>d : <span id="cdHours">00</span>h : <span id="cdMins">00</span>m : <span id="cdSecs">00</span>s
+        </span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <a href="tel:+2348031234567" class="hover:text-brandGold transition-colors flex items-center gap-1">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-brandGold"></i>
+          <span class="hidden md:inline">+234 (0) 803 123 45</span>
+        </a>
+        <span class="text-white/20">|</span>
+        <span class="flex items-center gap-1 text-slate-400">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brandGold"></i>
+          Minna, Niger State
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR (Modern, Clean, Glassmorphic with Pill CTA)
+       ========================================================================== -->
+  <header id="mainNavbar" class="sticky top-0 z-40 transition-all duration-300 py-4 glass-navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="relative w-11 h-11 rounded-2xl p-1 bg-white/10 border border-white/20 shadow-lg group-hover:border-brandGold/60 transition-all">
+          <img src="assets/images/Logo.jpg" alt="RCCG Niger Province 5 Logo" class="w-full h-full object-contain">
+        </div>
+        <div>
+          <span class="font-display font-black text-xl tracking-wider text-white flex items-center gap-1.5 leading-none">
+            RCCG <span class="text-brandGold"> NIGER PROVINCE 5</span>
+          </span>
+          <span class="text-[10px] tracking-widest text-slate-400 uppercase font-medium">Minna, Niger State</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-200">
+        <a href="index.html" class="text-brandGold font-semibold">Home</a>
+        <a href="about.html" class="hover:text-brandGold transition-colors">About Us</a>
+        <a href="leadership.html" class="hover:text-brandGold transition-colors">Leadership</a>
+        <a href="ministries.html" class="hover:text-brandGold transition-colors">Ministries</a>
+        <a href="programs.html" class="hover:text-brandGold transition-colors">Programs</a>
+        <a href="events.html" class="hover:text-brandGold transition-colors">Events</a>
+        <a href="sermons.html" class="hover:text-brandGold transition-colors">Sermons</a>
+        <a href="gallery.html" class="hover:text-brandGold transition-colors">Gallery</a>
+        <a href="contact.html" class="hover:text-brandGold transition-colors">Contact</a>
+      </nav>
+
+      <!-- Header Action Buttons (Reference UI Style: White Pill with Arrow) -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="give.html" class="text-xs uppercase tracking-wider font-bold text-slate-300 hover:text-white px-3 py-2 rounded-lg transition-colors flex items-center gap-1">
+          <i data-lucide="heart" class="w-4 h-4 text-brandGold"></i>
+          Give
+        </a>
+        <a href="#servicesSection" class="btn-pill-cta text-sm">
+          <span>Join Us</span>
+          <span class="arrow-circle">
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" type="button" class="lg:hidden p-2 rounded-xl bg-white/10 text-slate-200 hover:text-white hover:bg-white/20 transition-colors" aria-label="Toggle navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Slide-in Drawer -->
+  <div id="mobileMenu" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-2xl hidden flex flex-col p-6 animate-fadeIn">
+    <div class="flex items-center justify-between pb-6 border-b border-white/10">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/Logo.jpg" alt="RCCG Niger Province 5" class="w-9 h-9">
+        <span class="font-display font-bold text-lg text-white">RCCG Niger Province 5</span>
+      </div>
+      <button id="closeMobileMenu" class="p-2 rounded-full bg-white/10 text-slate-300 hover:text-white">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <div class="flex flex-col gap-4 py-8 text-lg font-medium text-slate-200">
+      <a href="index.html" class="text-brandGold">Home</a>
+      <a href="about.html" class="hover:text-brandGold">About Us</a>
+      <a href="leadership.html" class="hover:text-brandGold">Leadership</a>
+      <a href="ministries.html" class="hover:text-brandGold">Ministries</a>
+      <a href="programs.html" class="hover:text-brandGold">Programs & Services</a>
+      <a href="events.html" class="hover:text-brandGold">Upcoming Events</a>
+      <a href="sermons.html" class="hover:text-brandGold">Sermons & Media</a>
+      <a href="gallery.html" class="hover:text-brandGold">Photo Gallery</a>
+      <a href="contact.html" class="hover:text-brandGold">Contact Us</a>
+      <a href="give.html" class="hover:text-brandGold flex items-center gap-2 text-brandGold font-bold">
+        <i data-lucide="heart" class="w-5 h-5"></i> Online Giving
+      </a>
+    </div>
+    <div class="mt-auto pt-6 border-t border-white/10 flex flex-col gap-3">
+      <a href="#servicesSection" class="btn-pill-cta justify-center w-full py-3">
+        <span>Join Us This Sunday</span>
+        <span class="arrow-circle"><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
+      </a>
+      <button data-modal-target="prayerModal" class="w-full py-3 rounded-full border border-white/20 text-center font-semibold text-slate-200 hover:bg-white/10">
+        Submit Prayer Request
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HERO SECTION (DIRECTLY INSPIRED BY THE REFERENCE UI DESIGN)
+       ========================================================================== -->
+  <section class="relative pt-12 pb-24 lg:pt-16 lg:pb-32 overflow-hidden">
+    
+    <!-- Background Ethereal Church Light Backdrop -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1544427920-c49ccfb85579?auto=format&fit=crop&w=2000&q=80" 
+           alt="Worship Sanctuary" 
+           class="w-full h-full object-cover opacity-20 filter contrast-125 saturate-50 mix-blend-luminosity">
+      <div class="absolute inset-0 bg-gradient-to-b from-brandNavy/70 via-brandNavy/85 to-brandNavy"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Top Pill Tag (Like "Classes Programs Community" context in reference) -->
+      <div class="flex items-center justify-center lg:justify-start mb-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-pill text-xs font-semibold text-slate-200 shadow-md">
+          <span class="w-2 h-2 rounded-full bg-brandGold"></span>
+          <span>THE REDEEMED CHRISTIAN CHURCH OF GOD • NIGER PROVINCE 5 : ROYAL HEADQUARTERS</span>
+          <span class="bg-brandGold/20 text-brandGold px-2 py-0.5 rounded-full text-[10px] ml-1">Minna</span>
+        </div>
+      </div>
+
+      <!-- Main Grid: Left Hero Typography & Bottom Widgets | Right "Select your moment" Glass Card -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Column (8 cols): Bold Hero Typography + Floating Bottom Cards -->
+        <div class="lg:col-span-8 flex flex-col justify-between">
+          
+          <!-- Hero Headline with Inline Pill (Identical Concept to reference image's "Introducing Nourish. A new [AI Wellbeing] type of lifestyle.") -->
+          <div class="mb-10 text-center lg:text-left">
+            <h1 class="hero-headline text-4xl sm:text-6xl lg:text-[4.2rem] font-display font-extrabold text-white tracking-tight leading-[1.12]">
+              A Sanctuary of Grace. 
+              <br class="hidden sm:inline">
+              Walking in 
+              <span class="inline-flex items-center align-middle mx-1 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-sm sm:text-base font-semibold text-brandGold backdrop-blur-md shadow-lg">
+                <i data-lucide="sparkles" class="w-4 h-4 mr-1 text-brandGold"></i>
+                Living Christlike
+              </span>
+              Divine Dominion.
+            </h1>
+
+            <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-2xl font-normal leading-relaxed">
+              Welcome to RCCG Niger Province 5, Minna. A home of holy worship, transformative scripture study, fervent prayers, and intentional community where God transforms ordinary lives into kingdom ambassadors.
+            </p>
+
+            <!-- Quick Action Badges -->
+            <div class="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+              <a href="#servicesSection" class="btn-pill-cta text-base">
+                <span>Experience Our Worship</span>
+                <span class="arrow-circle">
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </span>
+              </a>
+              <button data-modal-target="prayerModal" class="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-pill text-white font-semibold hover:border-brandGold/50 transition-all text-sm">
+                <i data-lucide="sparkles" class="w-4 h-4 text-brandGold"></i>
+                Request Pastor's Prayer
+              </button>
+            </div>
+          </div>
+
+          <!-- Bottom Floating Widget Row (Exactly structured like bottom of reference UI) -->
+          <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 pt-6 items-stretch">
+            
+            <!-- Left Mini Widget: Avatar stack + rating/members -->
+            <div class="sm:col-span-4 p-4 rounded-3xl glass-panel-light flex flex-col justify-between">
+              <div class="flex items-center gap-3">
+                <div class="flex -space-x-2">
+                  <img class="inline-block h-8 w-8 rounded-full ring-2 ring-brandNavy object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Member">
+                  <img class="inline-block h-8 w-8 rounded-full ring-2 ring-brandNavy object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Member">
+                  <img class="inline-block h-8 w-8 rounded-full ring-2 ring-brandNavy object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Member">
+                </div>
+                <div class="text-xs">
+                  <span class="font-bold text-white block">3,500+ Believers</span>
+                  <span class="text-brandGold text-[11px] font-semibold flex items-center gap-0.5">
+                    <i data-lucide="star" class="w-3 h-3 fill-brandGold text-brandGold"></i> 45+ Parishes in Niger
+                  </span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-300 mt-2.5 leading-snug">
+                One big spiritual family sharing love, fellowship & kingdom purpose across Niger.
+              </p>
+            </div>
+
+            <!-- Center Mini Widget: Scripture Quote Card with image (Like Siddhartha Gautama quote card in reference UI) -->
+            <div class="sm:col-span-5 p-3.5 rounded-3xl glass-panel-light flex items-center gap-3">
+              <div class="w-14 h-14 rounded-2xl overflow-hidden shrink-0 border border-white/20">
+                <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=200&q=80" alt="Scripture of Hope" class="w-full h-full object-cover">
+              </div>
+              <div class="min-w-0 flex-1">
+                <p class="text-xs text-white font-medium line-clamp-2 italic leading-tight">
+                  "Those who wait on the Lord shall renew their strength; they shall mount up with wings."
+                </p>
+                <span class="text-[11px] text-brandGold font-semibold block mt-1">Isaiah 40:31 • Verse of Hope</span>
+              </div>
+            </div>
+
+            <!-- Right Mini Widget: Guided Live / Sermon Thumbnail -->
+            <div class="sm:col-span-3 p-3 rounded-3xl glass-panel-light flex flex-col justify-center items-center text-center relative overflow-hidden group cursor-pointer" onclick="location.href='sermons.html'">
+              <div class="absolute inset-0 bg-cover bg-center opacity-30 group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=300&q=80');"></div>
+              <div class="relative z-10">
+                <div class="w-8 h-8 rounded-full bg-brandGold/90 text-brandNavy flex items-center justify-center mx-auto mb-1.5 shadow-md">
+                  <i data-lucide="play" class="w-4 h-4 fill-current"></i>
+                </div>
+                <span class="text-xs font-bold text-white block">Sermon Vault</span>
+                <span class="text-[10px] text-slate-300">Watch & Listen</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right Column (4 cols): The Signature "Select your moment" Glass Card -->
+        <!-- Faithfully crafted following the right panel of the user's reference image -->
+        <div class="lg:col-span-4">
+          <div class="glass-panel p-6 sm:p-7 rounded-[2.5rem] relative overflow-hidden border border-white/20 shadow-2xl">
+            
+            <!-- Card Header -->
+            <div class="flex items-center justify-between mb-5">
+              <h3 class="font-display font-bold text-xl text-white">Select your moment</h3>
+              <span class="w-2.5 h-2.5 rounded-full bg-brandGold animate-pulse"></span>
+            </div>
+            
+            <p class="text-xs text-slate-300 mb-6">
+              Connect with your faith right now. Choose how you'd like to participate today:
+            </p>
+
+            <!-- 2x2 Grid of Moment Buttons (Matching the 4 squares in reference image) -->
+            <div class="grid grid-cols-2 gap-3.5 mb-6">
+              
+              <!-- 1. Daily Devotion -->
+              <a href="programs.html" class="moment-btn">
+                <div class="moment-icon-box">
+                  <i data-lucide="book-open" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xs font-semibold">Open Heavens</span>
+              </a>
+
+              <!-- 2. Prayer Request -->
+              <button data-modal-target="prayerModal" class="moment-btn">
+                <div class="moment-icon-box">
+                  <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xs font-semibold">Prayer Desk</span>
+              </button>
+
+              <!-- 3. Parishes & Fellowship -->
+              <a href="about.html#parishes" class="moment-btn">
+                <div class="moment-icon-box">
+                  <i data-lucide="church" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xs font-semibold">Find a Parish</span>
+              </a>
+
+              <!-- 4. Online Giving -->
+              <a href="give.html" class="moment-btn">
+                <div class="moment-icon-box">
+                  <i data-lucide="gift" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xs font-semibold">Give Online</span>
+              </a>
+
+            </div>
+
+            <!-- "Ask anything" Pill Input (Matching the voice/search pill at the bottom of reference UI) -->
+            <div class="pt-2 border-t border-white/10">
+              <label for="scriptureAskInput" class="text-[11px] font-medium text-slate-400 block mb-2 flex items-center justify-between">
+                <span>Spiritual Search & Pastoral Help</span>
+                <span class="text-brandGold text-[10px]">Instant</span>
+              </label>
+
+              <div class="relative flex items-center">
+                <div class="absolute left-3.5 w-6 h-6 rounded-full bg-gradient-to-tr from-brandBlue to-purple-500 flex items-center justify-center text-white shrink-0">
+                  <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                </div>
+                <input id="scriptureAskInput" 
+                       type="text" 
+                       placeholder="Ask anything (service time, prayer...)" 
+                       class="w-full bg-white/10 hover:bg-white/15 focus:bg-white/20 border border-white/15 focus:border-brandGold/80 text-xs text-white placeholder-slate-400 rounded-full pl-12 pr-12 py-3 outline-none transition-all">
+                <button id="scriptureAskBtn" type="button" class="absolute right-3 text-slate-400 hover:text-brandGold transition-colors">
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+              </div>
+
+              <!-- Interactive response area -->
+              <div id="scriptureResponse" class="hidden mt-3 p-3 rounded-2xl bg-slate-900/90 border border-brandGold/30 text-xs text-slate-200 leading-relaxed shadow-lg"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: SERVICE TIMES (Card Layout with modern icons)
+       ========================================================================== -->
+  <section id="servicesSection" class="py-20 relative z-10 border-t border-white/10 bg-slate-950/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brandGold/10 text-brandGold text-xs font-bold uppercase tracking-wider mb-3">
+          <i data-lucide="clock" class="w-3.5 h-3.5"></i> Join Us in Fellowship
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white">Our Weekly Service Times</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-3">
+          Whether joining in-person at our provincial cathedral or online, there is a place of glory prepared for you and your family.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Sunday Service -->
+        <div class="glass-panel p-8 rounded-3xl glass-card-hover relative group">
+          <div class="w-14 h-14 rounded-2xl bg-amber-500/20 text-brandGold flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="sun" class="w-7 h-7"></i>
+          </div>
+          <span class="text-xs uppercase font-bold tracking-widest text-brandGold">Every First Sunday of the Month (Thanksgiving Service)</span>
+          <h3 class="text-2xl font-display font-bold text-white mt-1 mb-2">Sunday Service</h3>
+          <p class="text-sm text-slate-300 mb-6">
+            A high-energy encounter of heartfelt praise, intense worship, unadulterated biblical message, and prophetic declarations for your week.
+          </p>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
+            <span class="flex items-center gap-1.5 font-semibold text-white">
+              <i data-lucide="clock" class="w-4 h-4 text-brandGold"></i> 8:00 AM - 11:30 AM
+            </span>
+            <span class="px-2.5 py-1 rounded-full bg-white/10 text-brandGold font-bold">Main Hall</span>
+          </div>
+        </div>
+
+        <!-- Tuesday Bible Study -->
+        <div class="glass-panel p-8 rounded-3xl glass-card-hover relative group">
+          <div class="w-14 h-14 rounded-2xl bg-sky-500/20 text-brandBlue flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="book-marked" class="w-7 h-7"></i>
+          </div>
+          <span class="text-xs uppercase font-bold tracking-widest text-sky-400">Every Tuesday Evening</span>
+          <h3 class="text-2xl font-display font-bold text-white mt-1 mb-2">Digging Deep</h3>
+          <p class="text-sm text-slate-300 mb-6">
+            Systematic expository study of God’s Word with interactive Q&A to ground believers in sound doctrine, righteousness, and spiritual maturity.
+          </p>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
+            <span class="flex items-center gap-1.5 font-semibold text-white">
+              <i data-lucide="clock" class="w-4 h-4 text-sky-400"></i> 5:00 PM - 6:00 PM
+            </span>
+            <span class="px-2.5 py-1 rounded-full bg-white/10 text-sky-400 font-bold">Bible Study</span>
+          </div>
+        </div>
+
+        <!-- Thursday Faith Clinic -->
+        <div class="glass-panel p-8 rounded-3xl glass-card-hover relative group">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 text-brandEmerald flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="flame" class="w-7 h-7"></i>
+          </div>
+          <span class="text-xs uppercase font-bold tracking-widest text-brandEmerald">Every Thursday Evening</span>
+          <h3 class="text-2xl font-display font-bold text-white mt-1 mb-2">Faith Clinic</h3>
+          <p class="text-sm text-slate-300 mb-6">
+            Fervent intercessory prayer meeting, spiritual warfare, deliverance, and divine healing. Come lay every stubborn challenge at Jesus' feet.
+          </p>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
+            <span class="flex items-center gap-1.5 font-semibold text-white">
+              <i data-lucide="clock" class="w-4 h-4 text-brandEmerald"></i> 5:00 PM - 6:30 PM
+            </span>
+            <span class="px-2.5 py-1 rounded-full bg-white/10 text-brandEmerald font-bold">Prayer Clinic</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: WELCOME & ABOUT THE PROVINCE
+       ========================================================================== -->
+  <section class="py-24 relative z-10 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Image Stack -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden glass-panel p-2 shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=900&q=80" 
+                   alt="Church Community" 
+                   class="w-full h-full object-cover rounded-[2.2rem]">
+            </div>
+            
+            <!-- Floating Badge Overlay -->
+            <div class="absolute -bottom-6 -right-4 sm:right-6 p-4 rounded-3xl glass-panel border border-brandGold/40 shadow-xl max-w-xs animate-float">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-brandGold flex items-center justify-center text-brandNavy font-bold">
+                  <i data-lucide="award" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Provincial Headquarters</h4>
+                  <p class="text-xs text-brandGold">Minna, Niger State</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content Details -->
+        <div class="lg:col-span-7">
+          <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-brandGold text-xs font-bold uppercase tracking-wider mb-4">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Welcome Message
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white leading-tight">
+            Welcome to RCCG Niger Province 5
+          </h2>
+          <p class="mt-5 text-base sm:text-lg text-slate-300 leading-relaxed">
+            The Redeemed Christian Church of God, Niger Province 5, headquartered in the historic capital city of Minna, Niger State, is an apostolic family charged with planting the kingdom of God across every community, campus, and household.
+          </p>
+          <p class="mt-4 text-sm sm:text-base text-slate-400 leading-relaxed">
+            Under the spiritual leadership of our father-in-the-Lord, the General Overseer <strong>Pastor E.A. Adeboye</strong>, and our visionary Provincial Pastor<strong>Pastor Oluyemi Oluwasegun</strong>, our mission remains unflinching: to make heaven, take as many people with us, live holistically Christlike lives, and plant churches within 5 minutes reach.
+          </p>
+
+          <!-- Core Value Pills -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8 pt-6 border-t border-white/10">
+            <div class="p-3.5 rounded-2xl glass-panel-light">
+              <span class="text-brandGold font-bold text-lg block font-display">Holiness</span>
+              <span class="text-xs text-slate-400">Our eternal lifestyle</span>
+            </div>
+            <div class="p-3.5 rounded-2xl glass-panel-light">
+              <span class="text-brandBlue font-bold text-lg block font-display">Prayer</span>
+              <span class="text-xs text-slate-400">Our powerhouse</span>
+            </div>
+            <div class="p-3.5 rounded-2xl glass-panel-light">
+              <span class="text-brandEmerald font-bold text-lg block font-display">Love</span>
+              <span class="text-xs text-slate-400">Our kingdom mark</span>
+            </div>
+          </div>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="about.html" class="btn-gold text-sm inline-flex items-center gap-2">
+              <span>Discover Our Story</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="leadership.html" class="px-6 py-3 rounded-full border border-white/20 text-slate-200 hover:text-white hover:bg-white/10 text-sm font-semibold transition-all">
+              Meet Pastoral Leadership
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: UPCOMING PROVINCIAL EVENTS
+       ========================================================================== -->
+  <section class="py-20 relative z-10 bg-slate-950/60 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <div>
+          <span class="text-xs uppercase font-bold tracking-widest text-brandGold">Gatherings & Summits</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white mt-1">Upcoming Events</h2>
+        </div>
+        <a href="events.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brandGold hover:underline">
+          View Full Province Calendar <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Event 1: Provincial Convention -->
+        <div class="glass-panel rounded-3xl overflow-hidden glass-card-hover flex flex-col">
+          <div class="h-48 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?auto=format&fit=crop&w=700&q=80" alt="Provincial Convention" class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brandNavy/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/20 text-center">
+              <span class="block text-xs uppercase font-bold text-brandGold">OCT</span>
+              <span class="block text-lg font-black text-white leading-none">18</span>
+            </div>
+            <div class="absolute top-4 right-4 bg-brandEmerald/90 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full">
+              Annual Gathering
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-display font-bold text-white mb-2">2026 Provincial Annual Convention</h3>
+              <p class="text-xs text-slate-300 mb-4 line-clamp-2">
+                A 3-day spiritual convocation gathering all parishes across Minna and Niger State for revival, empowerment, and ministerial ordination.
+              </p>
+            </div>
+            <div>
+              <div class="space-y-1.5 text-xs text-slate-400 mb-5">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="calendar" class="w-3.5 h-3.5 text-brandGold"></i> Oct 18 - 20, 2026 • 5:00 PM Daily
+                </div>
+                <div class="flex items-center gap-2">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brandGold"></i> Main Provincial Cathedral, Minna
+                </div>
+              </div>
+              <a href="events.html" class="block text-center py-2.5 rounded-full bg-white/10 hover:bg-brandGold hover:text-brandNavy transition-all text-xs font-bold text-white">
+                Event Details & Stream
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 2: Holy Ghost Night -->
+        <div class="glass-panel rounded-3xl overflow-hidden glass-card-hover flex flex-col">
+          <div class="h-48 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=700&q=80" alt="Holy Ghost Service" class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brandNavy/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/20 text-center">
+              <span class="block text-xs uppercase font-bold text-brandGold">OCT</span>
+              <span class="block text-lg font-black text-white leading-none">02</span>
+            </div>
+            <div class="absolute top-4 right-4 bg-brandBlue/90 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full">
+              Live Linkup
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-display font-bold text-white mb-2">Monthly Holy Ghost Service</h3>
+              <p class="text-xs text-slate-300 mb-4 line-clamp-2">
+                Live nationwide broadcast link-up with the Redemption City. Miracles, salvation, prophetic declarations from Daddy G.O.
+              </p>
+            </div>
+            <div>
+              <div class="space-y-1.5 text-xs text-slate-400 mb-5">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="calendar" class="w-3.5 h-3.5 text-brandGold"></i> First Friday of the Month • 7:00 PM
+                </div>
+                <div class="flex items-center gap-2">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brandGold"></i> Live Downstreams
+                </div>
+              </div>
+              <a href="events.html" class="block text-center py-2.5 rounded-full bg-white/10 hover:bg-brandGold hover:text-brandNavy transition-all text-xs font-bold text-white">
+                Join Viewing Center
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 3: Youth & Young Adults Ignite -->
+        <div class="glass-panel rounded-3xl overflow-hidden glass-card-hover flex flex-col">
+          <div class="h-48 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=700&q=80" alt="Youth Summit" class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brandNavy/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/20 text-center">
+              <span class="block text-xs uppercase font-bold text-brandGold">NOV</span>
+              <span class="block text-lg font-black text-white leading-none">21</span>
+            </div>
+            <div class="absolute top-4 right-4 bg-amber-500/90 text-brandNavy text-[11px] font-bold px-2.5 py-0.5 rounded-full">
+              YAYA Summit
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-display font-bold text-white mb-2">YAYA Youth Ignite Summit 2026</h3>
+              <p class="text-xs text-slate-300 mb-4 line-clamp-2">
+                A massive gathering of youths, campus students from FUT Minna, Niger State Poly, and young working professionals.
+              </p>
+            </div>
+            <div>
+              <div class="space-y-1.5 text-xs text-slate-400 mb-5">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="calendar" class="w-3.5 h-3.5 text-brandGold"></i> Saturday, Nov 21 • 10:00 AM
+                </div>
+                <div class="flex items-center gap-2">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brandGold"></i> Youth Arena, Minna
+                </div>
+              </div>
+              <a href="events.html" class="block text-center py-2.5 rounded-full bg-white/10 hover:bg-brandGold hover:text-brandNavy transition-all text-xs font-bold text-white">
+                Register Free
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: MINISTRIES GRID
+       ========================================================================== -->
+  <section class="py-24 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase font-bold tracking-widest text-brandGold">Active Departments</span>
+        <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white mt-1">Our Ministries</h2>
+        <p class="text-slate-400 text-sm mt-3">
+          Every member is an active minister. Discover vibrant fellowships where your gifts can flourish and touch lives.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        
+        <!-- Good Women -->
+        <a href="ministries.html" class="glass-panel p-5 rounded-3xl text-center glass-card-hover group">
+          <div class="w-12 h-12 rounded-2xl bg-pink-500/20 text-pink-400 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-sm text-white">Good Women</h4>
+          <span class="text-[11px] text-slate-400 mt-1 block">Virtuous Mothers</span>
+        </a>
+
+        <!-- Men's Fellowship -->
+        <a href="ministries.html" class="glass-panel p-5 rounded-3xl text-center glass-card-hover group">
+          <div class="w-12 h-12 rounded-2xl bg-blue-500/20 text-blue-400 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+            <i data-lucide="shield" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-sm text-white">Men of Issachar</h4>
+          <span class="text-[11px] text-slate-400 mt-1 block">Family Priests</span>
+        </a>
+
+        <!-- YAYA Youth -->
+        <a href="ministries.html" class="glass-panel p-5 rounded-3xl text-center glass-card-hover group">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-brandGold flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+            <i data-lucide="zap" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-sm text-white">Youth & YAYA</h4>
+          <span class="text-[11px] text-slate-400 mt-1 block">Kingdom Leaders</span>
+        </a>
+
+        <!-- Children & Teens -->
+        <a href="ministries.html" class="glass-panel p-5 rounded-3xl text-center glass-card-hover group">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+            <i data-lucide="smile" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-sm text-white">Junior Church</h4>
+          <span class="text-[11px] text-slate-400 mt-1 block">Teens & Kids</span>
+        </a>
+
+        <!-- Choir & Praise -->
+        <a href="ministries.html" class="glass-panel p-5 rounded-3xl text-center glass-card-hover group">
+          <div class="w-12 h-12 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+            <i data-lucide="music" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-sm text-white">Province Choir</h4>
+          <span class="text-[11px] text-slate-400 mt-1 block">True Worshipers</span>
+        </a>
+
+        <!-- Prayer & Intercessors -->
+        <a href="ministries.html" class="glass-panel p-5 rounded-3xl text-center glass-card-hover group">
+          <div class="w-12 h-12 rounded-2xl bg-red-500/20 text-red-400 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+            <i data-lucide="flame" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-sm text-white">Prayer Warriors</h4>
+          <span class="text-[11px] text-slate-400 mt-1 block">24/7 Watchmen</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: LATEST SERMONS & MEDIA SPOTLIGHT
+       ========================================================================== -->
+  <section class="py-20 relative z-10 bg-slate-950/50 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <div>
+          <span class="text-xs uppercase font-bold tracking-widest text-brandGold">Spiritual Nourishment</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white mt-1">Latest Sermons & Messages</h2>
+        </div>
+        <a href="sermons.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brandGold hover:underline">
+          Browse Sermon Archive <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Sermon 1 -->
+        <div class="glass-panel rounded-3xl overflow-hidden glass-card-hover">
+          <div class="relative h-48">
+            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=700&q=80" alt="Divine Acceleration" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+              <a href="sermons.html" class="w-12 h-12 rounded-full bg-brandGold text-brandNavy flex items-center justify-center shadow-xl hover:scale-110 transition-transform">
+                <i data-lucide="play" class="w-5 h-5 fill-current"></i>
+              </a>
+            </div>
+            <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-md bg-black/70 text-[11px] font-mono text-white">48 mins</span>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] uppercase tracking-wider font-bold text-brandGold">Faith & Power</span>
+            <h3 class="text-lg font-display font-bold text-white mt-1 mb-2">Divine Acceleration: Stepping into Supernatural Speed</h3>
+            <p class="text-xs text-slate-300 mb-4 line-clamp-2">
+              Learn the biblical secrets of waiting upon God to transcend human limitations and achieve decade goals in single seasons.
+            </p>
+            <div class="flex items-center justify-between text-xs text-slate-400 pt-3 border-t border-white/10">
+              <span>Provincial Pastor</span>
+              <span>Sunday Celebration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sermon 2 -->
+        <div class="glass-panel rounded-3xl overflow-hidden glass-card-hover">
+          <div class="relative h-48">
+            <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=700&q=80" alt="Holiness" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+              <a href="sermons.html" class="w-12 h-12 rounded-full bg-brandGold text-brandNavy flex items-center justify-center shadow-xl hover:scale-110 transition-transform">
+                <i data-lucide="play" class="w-5 h-5 fill-current"></i>
+              </a>
+            </div>
+            <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-md bg-black/70 text-[11px] font-mono text-white">54 mins</span>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] uppercase tracking-wider font-bold text-sky-400">Christian Conduct</span>
+            <h3 class="text-lg font-display font-bold text-white mt-1 mb-2">Holiness: The Irreducible Foundation of Divine Favor</h3>
+            <p class="text-xs text-slate-300 mb-4 line-clamp-2">
+              Unpacking Hebrews 12:14. Why sanctification and pure living open closed doors and preserve believers against earthly storms.
+            </p>
+            <div class="flex items-center justify-between text-xs text-slate-400 pt-3 border-t border-white/10">
+              <span>Assistant Provincial Pastor</span>
+              <span>Digging Deep Study</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sermon 3 -->
+        <div class="glass-panel rounded-3xl overflow-hidden glass-card-hover">
+          <div class="relative h-48">
+            <img src="https://images.unsplash.com/photo-1447069387593-a5de0862481e?auto=format&fit=crop&w=700&q=80" alt="Prevailing Prayer" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+              <a href="sermons.html" class="w-12 h-12 rounded-full bg-brandGold text-brandNavy flex items-center justify-center shadow-xl hover:scale-110 transition-transform">
+                <i data-lucide="play" class="w-5 h-5 fill-current"></i>
+              </a>
+            </div>
+            <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-md bg-black/70 text-[11px] font-mono text-white">62 mins</span>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] uppercase tracking-wider font-bold text-emerald-400">Spiritual Warfare</span>
+            <h3 class="text-lg font-display font-bold text-white mt-1 mb-2">The Weapons of Our Warfare: Victorious Faith</h3>
+            <p class="text-xs text-slate-300 mb-4 line-clamp-2">
+              Engaging the authority of the Believer in prayer. Demolishing every foundational stronghold and standing firm in Christ.
+            </p>
+            <div class="flex items-center justify-between text-xs text-slate-400 pt-3 border-t border-white/10">
+              <span>Prayer Band Coordinator</span>
+              <span>Faith Clinic</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: BIBLE VERSE / SPIRITUAL CTA BANNER
+       ========================================================================== -->
+  <section class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1800&q=80" 
+           alt="Spiritual Backdrop" 
+           class="w-full h-full object-cover opacity-15 filter brightness-75">
+      <div class="absolute inset-0 bg-gradient-to-r from-brandNavy via-brandNavy/90 to-brandNavy"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+      <div class="w-16 h-16 rounded-full bg-brandGold/20 text-brandGold flex items-center justify-center mx-auto mb-6 border border-brandGold/30 shadow-lg">
+        <i data-lucide="quote" class="w-8 h-8"></i>
+      </div>
+      <blockquote class="text-2xl sm:text-4xl font-display font-bold text-white leading-relaxed italic">
+        "Jesus Christ the same yesterday, and today, and for ever."
+      </blockquote>
+      <cite class="mt-4 block font-semibold text-brandGold tracking-widest text-sm uppercase">
+        — Hebrews 13:8 (KJV)
+      </cite>
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <button data-modal-target="prayerModal" class="btn-gold">
+          Submit Your Prayer Burden
+        </button>
+        <a href="give.html" class="px-6 py-3 rounded-full border border-white/20 hover:bg-white/10 text-white font-semibold text-sm transition-all flex items-center gap-2">
+          <i data-lucide="heart" class="w-4 h-4 text-brandGold"></i> Partner With Niger Province 5
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: PHOTO GALLERY PREVIEW WITH LIGHTBOX
+       ========================================================================== -->
+  <section class="py-20 relative z-10 border-t border-white/10 bg-slate-950/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <div>
+          <span class="text-xs uppercase font-bold tracking-widest text-brandGold">Memories & Fellowship</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white mt-1">Province Life in Photos</h2>
+        </div>
+        <a href="gallery.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brandGold hover:underline">
+          View Complete Photo Gallery <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        
+        <a href="#" data-gallery-img="https://images.unsplash.com/photo-1510519138171-c70d7634f02c?auto=format&fit=crop&w=1200&q=80" data-gallery-title="Sunday Celebration Worship" class="aspect-square rounded-2xl overflow-hidden glass-panel relative group">
+          <img src="https://images.unsplash.com/photo-1510519138171-c70d7634f02c?auto=format&fit=crop&w=600&q=80" alt="Worship" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <i data-lucide="zoom-in" class="w-6 h-6"></i>
+          </div>
+        </a>
+
+        <a href="#" data-gallery-img="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1200&q=80" data-gallery-title="Community Outreach in Minna" class="aspect-square rounded-2xl overflow-hidden glass-panel relative group">
+          <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=600&q=80" alt="Community Outreach" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <i data-lucide="zoom-in" class="w-6 h-6"></i>
+          </div>
+        </a>
+
+        <a href="#" data-gallery-img="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=80" data-gallery-title="YAYA Youth Fellowship Gathering" class="aspect-square rounded-2xl overflow-hidden glass-panel relative group">
+          <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=600&q=80" alt="Youth Fellowship" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <i data-lucide="zoom-in" class="w-6 h-6"></i>
+          </div>
+        </a>
+
+        <a href="#" data-gallery-img="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80" data-gallery-title="Provincial Ministerial Conference" class="aspect-square rounded-2xl overflow-hidden glass-panel relative group">
+          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Ministers Conference" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <i data-lucide="zoom-in" class="w-6 h-6"></i>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: CONNECT & PROVINCIAL LOCATION
+       ========================================================================== -->
+  <section class="py-20 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Contact Details -->
+        <div class="lg:col-span-6 glass-panel p-8 sm:p-10 rounded-3xl">
+          <span class="text-xs uppercase font-bold tracking-widest text-brandGold">Get in Touch</span>
+          <h2 class="text-3xl font-display font-bold text-white mt-1 mb-4">We are Located in Minna</h2>
+          <p class="text-sm text-slate-300 leading-relaxed mb-8">
+            Whether you are relocating to Niger State, a student at FUT Minna or Niger State Poly, or looking for a church family that nurtures your faith, you are always welcome here.
+          </p>
+
+          <div class="space-y-4 text-sm text-slate-200">
+            <div class="flex items-start gap-4 p-3.5 rounded-2xl bg-white/5 border border-white/10">
+              <div class="w-10 h-10 rounded-xl bg-brandGold/20 text-brandGold flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="font-bold text-white block">Provincial Headquarters</span>
+                <span class="text-xs text-slate-400">RCCG Niger Province 5 HQ, Opp. NUT Teachers House , St. John Junction, Minna, Niger State</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-3.5 rounded-2xl bg-white/5 border border-white/10">
+              <div class="w-10 h-10 rounded-xl bg-brandBlue/20 text-brandBlue flex items-center justify-center shrink-0">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div class="flex-1 flex items-center justify-between">
+                <div>
+                  <span class="font-bold text-white block">Provincial Secretariat & Prayer Helpline</span>
+                  <span class="text-xs text-slate-400">+234 (0) 803 123 4567 • +234 (0) 805 987 6543</span>
+                </div>
+                <button data-copy="+2348031234567" class="text-xs text-brandGold hover:underline font-semibold">Copy</button>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-3.5 rounded-2xl bg-white/5 border border-white/10">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-brandEmerald flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div class="flex-1 flex items-center justify-between">
+                <div>
+                  <span class="font-bold text-white block">Official Email</span>
+                  <span class="text-xs text-slate-400">province5@rccg.org.ng • info@rccgprovince5minna.org</span>
+                </div>
+                <button data-copy="province5@rccg.org.ng" class="text-xs text-brandEmerald hover:underline font-semibold">Copy</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 flex gap-3">
+            <a href="contact.html" class="btn-pill-cta text-xs">
+              <span>Send Message</span>
+              <span class="arrow-circle"><i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+            </a>
+            <a href="give.html" class="px-5 py-2.5 rounded-full border border-white/20 text-xs font-bold text-white hover:bg-white/10 transition-all flex items-center gap-1.5">
+              <i data-lucide="gift" class="w-3.5 h-3.5 text-brandGold"></i> Province Bank Accounts
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Interactive Message / Contact Form -->
+        <div class="lg:col-span-6 glass-panel p-8 sm:p-10 rounded-3xl">
+          <h3 class="text-2xl font-display font-bold text-white mb-2">Send Us a Quick Message</h3>
+          <p class="text-xs text-slate-400 mb-6">Our provincial ministers and pastoral care team review all incoming messages daily.</p>
+          
+          <form id="contactForm" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Your Full Name</label>
+                <input type="text" required placeholder="Brother / Sister..." class="w-full bg-white/10 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 outline-none focus:border-brandGold transition-all">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Phone Number / WhatsApp</label>
+                <input type="tel" required placeholder="+234..." class="w-full bg-white/10 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 outline-none focus:border-brandGold transition-all">
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Email Address</label>
+              <input type="email" placeholder="example@gmail.com" class="w-full bg-white/10 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 outline-none focus:border-brandGold transition-all">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Subject / Area of Inquiry</label>
+              <select class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-brandGold transition-all">
+                <option value="General Inquiry">General Province Inquiry</option>
+                <option value="Find a Parish">Finding a Parish in Minna</option>
+                <option value="Pastoral Counseling">Pastoral Counseling</option>
+                <option value="Membership & Baptism">Membership & Believers' Baptism</option>
+                <option value="Youth Fellowship">Youth & Campus Ministry</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Message</label>
+              <textarea rows="3" required placeholder="How can the ministry be of blessing to you today?" class="w-full bg-white/10 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 outline-none focus:border-brandGold transition-all"></textarea>
+            </div>
+            <button type="submit" class="btn-gold w-full py-3.5 text-sm font-bold flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i> Submit Inquiry
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER (Modern 4-Column Design)
+       ========================================================================== -->
+  <footer class="relative z-10 bg-slate-950 border-t border-white/10 pt-16 pb-12 text-sm text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Col 1: Brand & Identity -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/Logo.jpg" alt="RCCG Niger Province 5" class="w-10 h-10">
+            <div>
+              <h4 class="font-display font-extrabold text-lg text-white">RCCG Niger Province 5</h4>
+              <p class="text-xs text-brandGold font-semibold">Minna, Niger State</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm mb-6">
+            The Redeemed Christian Church of God, Niger Province 5, Minna. A covenant people committed to holiness, kingdom expansion, passionate worship, and spreading the gospel of Jesus Christ.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex items-center gap-3">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brandGold hover:text-brandNavy text-white flex items-center justify-center transition-colors">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brandGold hover:text-brandNavy text-white flex items-center justify-center transition-colors">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brandGold hover:text-brandNavy text-white flex items-center justify-center transition-colors">
+              <i data-lucide="youtube" class="w-4 h-4"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brandGold hover:text-brandNavy text-white flex items-center justify-center transition-colors">
+              <i data-lucide="twitter" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h5 class="text-white font-bold font-display text-sm mb-4">Quick Links</h5>
+          <ul class="space-y-2 text-xs">
+            <li><a href="about.html" class="hover:text-brandGold transition-colors">About the Province</a></li>
+            <li><a href="leadership.html" class="hover:text-brandGold transition-colors">Pastoral Leadership</a></li>
+            <li><a href="ministries.html" class="hover:text-brandGold transition-colors">Ministries & Groups</a></li>
+            <li><a href="programs.html" class="hover:text-brandGold transition-colors">Weekly Service Times</a></li>
+            <li><a href="events.html" class="hover:text-brandGold transition-colors">Provincial Calendar</a></li>
+            <li><a href="gallery.html" class="hover:text-brandGold transition-colors">Photo Highlights</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Spiritual Resources -->
+        <div>
+          <h5 class="text-white font-bold font-display text-sm mb-4">Resources</h5>
+          <ul class="space-y-2 text-xs">
+            <li><a href="sermons.html" class="hover:text-brandGold transition-colors">Sermon Archives</a></li>
+            <li><a href="programs.html" class="hover:text-brandGold transition-colors">Open Heavens Devotional</a></li>
+            <li><a href="give.html" class="hover:text-brandGold transition-colors">Tithe & Offering Online</a></li>
+            <li><a href="contact.html" class="hover:text-brandGold transition-colors">Minna Parish Directory</a></li>
+            <li><a href="#" data-modal-target="prayerModal" class="hover:text-brandGold transition-colors">Submit Prayer Request</a></li>
+            <li><a href="https://rccg.org" target="_blank" rel="noopener" class="hover:text-brandGold transition-colors">RCCG Worldwide HQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Service Hours -->
+        <div>
+          <h5 class="text-white font-bold font-display text-sm mb-4">Service Schedule</h5>
+          <div class="space-y-2.5 text-xs">
+            <div>
+              <span class="block text-white font-semibold">Sunday Service</span>
+              <span class="text-slate-400">8:00 AM - 11:30 AM</span>
+            </div>
+            <div>
+              <span class="block text-white font-semibold">Tuesday Digging Deep</span>
+              <span class="text-slate-400">5:00 PM - 6:00 PM</span>
+            </div>
+            <div>
+              <span class="block text-white font-semibold">Thursday Faith Clinic</span>
+              <span class="text-slate-400">5:00 PM - 6:00 PM</span>
+            </div>
+            <div class="pt-2">
+              <span class="block text-brandGold font-semibold">First Friday Holy Ghost Night</span>
+              <span class="text-slate-400">7:00 PM - Dawn</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Credits -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <p>© 2026 The Redeemed Christian Church of God, Niger Province 5, Minna. All Rights Reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="about.html" class="hover:text-brandGold transition-colors">Privacy Policy</a>
+          <a href="contact.html" class="hover:text-brandGold transition-colors">Locate Parish</a>
+          <a href="give.html" class="text-brandGold hover:underline font-bold">Online Giving</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS: PRAYER REQUEST MODAL
+       ========================================================================== -->
+  <div id="prayerModal" class="fixed inset-0 z-50 modal-container modal-overlay hidden flex items-center justify-center p-4">
+    <div class="glass-panel p-6 sm:p-8 rounded-3xl max-w-lg w-full relative shadow-2xl animate-fadeIn border border-white/20">
+      <button data-modal-close class="absolute top-5 right-5 text-slate-400 hover:text-white p-1 rounded-full bg-white/10">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-2xl bg-brandGold/20 text-brandGold flex items-center justify-center">
+          <i data-lucide="sparkles" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-display font-bold text-white">Confidential Prayer Request</h3>
+          <p class="text-xs text-slate-400">Our Provincial Intercessors will join faith with you</p>
+        </div>
+      </div>
+
+      <form id="prayerRequestForm" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Your Name</label>
+          <input id="prayerName" type="text" required placeholder="Brother / Sister..." class="w-full bg-white/10 border border-white/15 rounded-xl px-4 py-2.5 text-sm text-white placeholder-slate-500 outline-none focus:border-brandGold">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Phone Number</label>
+            <input type="tel" placeholder="+234..." class="w-full bg-white/10 border border-white/15 rounded-xl px-4 py-2.5 text-sm text-white placeholder-slate-500 outline-none focus:border-brandGold">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Prayer Category</label>
+            <select class="w-full bg-slate-900 border border-white/15 rounded-xl px-3 py-2.5 text-sm text-white outline-none focus:border-brandGold">
+              <option>Healing & Health</option>
+              <option>Fruit of the Womb</option>
+              <option>Financial Breakthrough</option>
+              <option>Family & Marriage</option>
+              <option>Career / Job / Exam</option>
+              <option>Deliverance & Spiritual</option>
+              <option>Thanksgiving</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Your Prayer Request</label>
+          <textarea rows="4" required placeholder="Write your prayer point clearly..." class="w-full bg-white/10 border border-white/15 rounded-xl px-4 py-2.5 text-sm text-white placeholder-slate-500 outline-none focus:border-brandGold"></textarea>
+        </div>
+        <p class="text-[11px] text-slate-400 italic">
+          "Again I say unto you, That if two of you shall agree on earth as touching any thing that they shall ask, it shall be done for them." — Matthew 18:19
+        </p>
+        <button type="submit" class="btn-gold w-full py-3 text-sm font-bold flex items-center justify-center gap-2">
+          <i data-lucide="send" class="w-4 h-4"></i> Submit for Fervent Prayer
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: LIGHTBOX MODAL
+       ========================================================================== -->
+  <div id="galleryLightbox" class="fixed inset-0 z-50 hidden modal-overlay flex items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full">
+      <button id="closeLightbox" class="absolute -top-12 right-0 text-white bg-white/20 p-2 rounded-full hover:bg-white/30 transition-all">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <div class="rounded-3xl overflow-hidden glass-panel p-2 shadow-2xl">
+        <img id="lightboxImage" src="" alt="Gallery Preview" class="w-full max-h-[80vh] object-contain rounded-2xl mx-auto">
+        <p id="lightboxCaption" class="text-center text-sm font-medium text-white py-3"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
